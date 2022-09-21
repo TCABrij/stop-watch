@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 80vh;
+    display: grid;
+    place-content: center;
+    background-color: orange;
+}
+
+.title{
+    color: black;
+    font: 2em arial;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.counters{
+    color: white;
+    font: 4em arial;
+    margin-bottom: 15px;
+    text-align: center;
+    text-shadow: 0px 0px 10px rgb(67, 65, 65);
+}
+
+.buttons{
+    text-align: center;
+}
+
+.button{
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.671);
+    transform: translateY(-4px);
+    transition: transform .3s, background-color .3s;
+    font-weight: 500;
+}
+.button:active{
+    transform: translateY(1px);
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.671);
+}
+
+button:hover{
+    background-color: dodgerblue;
+    color: white;
+}
+
+.laps{
+
+    margin-top: 30px;
+    height: 200px;
+    overflow-y: auto;
+}
+
+.lap{
+   color: white;
+   padding: 5px 0px 5px 8px;
+   background-color: brown;
+   margin: 5px
+}
+.lap:hover{
+    background-color: rgb(146, 41, 41);
+}
+
+.remove-hovers:hover{
+   background: none;
+   cursor:not-allowed;
+   box-shadow: none;
+}
+
+
+::-webkit-scrollbar{
+   width: 10px;
+   border-radius: 10px;
+   background-color: rgb(59, 58, 58);
+}
